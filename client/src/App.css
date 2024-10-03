@@ -1,0 +1,96 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: 'Press Start 2P', sans-serif; /* Use Roboto font for consistency */
+  background-color: #191919; /* Dark background color */
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+.app {
+  text-align: center;
+  background: url('./img/background.jfif') no-repeat center center/cover;
+  height: 100vh; /* Use viewport height to cover the entire screen */
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+  padding: 20px;
+  border-radius: 10px;
+  margin: 20px;
+  width: 80%; /* Adjust width as needed */
+  max-width: 600px; /* Limit maximum width for responsiveness */
+}
+
+.container h1 {
+  margin-bottom: 20px;
+  font-family: 'Press Start 2P', cursive; /* Use Press Start 2P from Google Fonts */
+  font-size: 3rem;
+  color: white;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+input {
+  padding: 10px;
+  font-size: 16px;
+  margin-top: 10px;
+  border-radius: 5px;
+  border: 2px solid #3333cc; /* Blue border for input field */
+  background-color: rgba(255, 255, 255, 0.1); /* Semi-transparent white background */
+  color: white;
+  outline: none;
+  transition: border-color 0.3s, background-color 0.3s;
+  width: calc(100% - 44px); /* Take full width of parent container, subtract padding and border */
+  max-width: 100%;
+}
+
+input::placeholder {
+  color: rgba(255, 255, 255, 0.5); /* Lighter placeholder text */
+}
+
+input:focus {
+  border-color: #000099; /* Darker blue border on focus */
+  background-color: rgba(255, 255, 255, 0.3); /* Slightly more opaque background on focus */
+}
+
+button {
+  margin-top: 10px;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: none;
+  background-color: #3333cc; /* Blue background color */
+  color: white;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+button:hover {
+  background-color: #000099; /* Darker blue on hover */
+  transform: scale(1.05);
+}
+
+.error-message {
+  color: red;
+  margin-top: 20px;
+  padding: 10px;
+  border: 2px solid red; /* Red border for error message */
+  border-radius: 5px;
+  background-color: rgba(255, 0, 0, 0.1); /* Semi-transparent red background */
+  width: 100%; /* Take full width of parent container */
+  text-align: center;
+  box-sizing: border-box;
+}
